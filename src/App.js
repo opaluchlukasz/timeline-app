@@ -25,7 +25,9 @@ class App extends Component {
 		<Navbar inverse>
 		  <Navbar.Header>
 			<Navbar.Brand>
-				<a href="#">Timeline</a>
+			  {
+                //eslint-disable-next-line
+              }<a href="#">Timeline</a>
 			</Navbar.Brand>
 		  </Navbar.Header>
 		</Navbar>
@@ -33,7 +35,6 @@ class App extends Component {
 	  </div>
     );
   }
-  
 }
 
 export default App;
