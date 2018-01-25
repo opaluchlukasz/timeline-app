@@ -2,14 +2,26 @@
   "name": "timeline-app",
   "version": "0.1.0",
   "private": true,
+  "jest": {
+    "verbose": true
+  },
   "dependencies": {
     "bootstrap": "3.3.7",
     "moment": "^2.18.1",
+    "prop-types": "15.6.0",
     "react": "^15.6.1",
     "react-bootstrap": "0.31.0",
     "react-dom": "^15.6.1",
     "react-scripts": "1.0.10",
     "uuid": "3.1.0"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-jest": "22.1.0",
+    "babel-plugin-transform-object-rest-spread": "6.26.0",
+    "callsites": "2.0.0",
+    "jest": "22.1.4",
+    "regenerator-runtime": "0.11.1"
   },
   "lint-staged": {
     "src/**/*.{js,jsx,json,css}": [
@@ -21,7 +33,7 @@
     "precommit": "lint-staged",
     "start": "react-scripts start",
     "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
+    "test": "jest",
     "eject": "react-scripts eject"
   }
 }

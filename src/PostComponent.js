@@ -1,7 +1,8 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
 class PostComponent extends Component {
-   
+
   render() {
     return (
 	  <div className="col-sm-6">
@@ -17,5 +18,11 @@ class PostComponent extends Component {
     );
   }
 }
+
+PostComponent.propTypes = {
+    author: PropTypes.string.isRequired,
+    content: PropTypes.string.isRequired,
+    date: PropTypes.string.isRequired,
+};
 
 export default PostComponent;

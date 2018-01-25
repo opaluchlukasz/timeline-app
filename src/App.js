@@ -1,5 +1,4 @@
 import React, { Component } from 'react';
-import './App.css';
 import PostComponent from './PostComponent';
 import PostAddForm from './PostAddForm';
 import moment from 'moment';
